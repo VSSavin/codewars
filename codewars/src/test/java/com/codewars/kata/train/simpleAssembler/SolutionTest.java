@@ -17,6 +17,7 @@ public class SolutionTest {
         Map<String, Integer> out = new HashMap<String, Integer>();
         out.put("a", 1);
         assertEquals(out, SimpleAssembler.interpret(program));
+        System.out.println(new SimpleAssembler().toString());
     }
 
     @Test
@@ -26,6 +27,7 @@ public class SolutionTest {
         out.put("a", 0);
         out.put("b", -20);
         assertEquals(out, SimpleAssembler.interpret(program));
+        System.out.println(new SimpleAssembler().toString());
     }
 
     @Test
@@ -37,6 +39,7 @@ public class SolutionTest {
         out.put("c", 0);
         out.put("d", 0);
         assertEquals(out, SimpleAssembler.interpret(program));
+        System.out.println(new SimpleAssembler().toString());
     }
 
     @Test
@@ -47,5 +50,6 @@ public class SolutionTest {
         out.put("b", 0);
         out.put("d", 1);
         assertEquals(out, SimpleAssembler.interpret(program));
+        System.out.println(new SimpleAssembler().toString());
     }
 }

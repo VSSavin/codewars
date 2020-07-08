@@ -122,4 +122,14 @@ public class SimpleAssembler {
 
         return ret;
     }
+
+    @Override
+    public String toString() {
+        String ret = "";
+        int i = 0;
+        for (String key : out.keySet()) {
+            ret += "Key: " + key + "; Value: " + out.get(key) + "\r\n";
+        }
+        return ret;
+    }
 }
